@@ -5,6 +5,8 @@ out/
 *.iml
 .idea
 out
+*.mp4
+*.mp3
 
 ### Eclipse ###
 .apt_generated

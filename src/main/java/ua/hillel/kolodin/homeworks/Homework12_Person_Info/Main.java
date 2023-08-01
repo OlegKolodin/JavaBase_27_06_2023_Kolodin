@@ -13,15 +13,18 @@ package ua.hillel.kolodin.homeworks.Homework12_Person_Info;
 //        Зателефонувати до громадян Sherlock Holmes з міста  можна за номером 37742123513.
 public class Main {
     public static void main(String[] args) {
-        Person.personInfo("Will", "Smith", "New York", "2936729462846");
-        Person.personInfo("Jackie", "Chan", "Shanghai", "12312412412");
-        Person.personInfo("Sherlock", "Holmes ", "London", "37742123513");
+
+        System.out.println(Person.personInfo("Will", "Smith", "New York", "2936729462846"));
+        System.out.println(Person.personInfo("Jackie", "Chan", "Shanghai", "12312412412"));
+        System.out.println(Person.personInfo("Sherlock", "Holmes ", "London", "37742123513"));
+
     }
 }
 
 class Person {
-    public static void personInfo(String name, String surname, String city, String phoneNumber) {
-        System.out.println("Зателефонувати громадянину " + name + " " + surname + " із міста " + city + " можна за номером " + phoneNumber);
 
+    public static String personInfo(String name, String surname, String city, String phoneNumber) {
+         String info = "Зателефонувати громадянину " + name + " " + surname + " із міста " + city + " можна за номером " + phoneNumber;
+        return info;
     }
 }
